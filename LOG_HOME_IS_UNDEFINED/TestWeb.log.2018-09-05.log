@@ -1,0 +1,274 @@
+2018-09-05 11:04:32.960 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 9588 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:04:32.963 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:04:33.092 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@72ade7e3: startup date [Wed Sep 05 11:04:33 CST 2018]; root of context hierarchy
+2018-09-05 11:04:39.272 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f03a6c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:04:40.337 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:04:41.680 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:04:41.876 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:04:41.939 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:04:42.277 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:04:42.282 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:04:42.459 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:04:43.031 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:04:45.946 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:04:50.467 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:04:51.991 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@72ade7e3: startup date [Wed Sep 05 11:04:33 CST 2018]; root of context hierarchy
+2018-09-05 11:04:52.194 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:04:52.347 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:04:52.365 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:04:52.367 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:04:52.487 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:04:52.488 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:04:53.608 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 23.018 seconds (JVM running for 30.426)
+2018-09-05 11:04:54.318 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:04:54.371 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:04:54.532 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:04:55.455 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:04:55.458 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:04:55.526 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@72ade7e3: startup date [Wed Sep 05 11:04:33 CST 2018]; root of context hierarchy
+2018-09-05 11:04:55.542 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:04:55.545 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:04:55.590 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-05 11:05:45.453 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 8196 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:05:45.457 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:05:45.757 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31500940: startup date [Wed Sep 05 11:05:45 CST 2018]; root of context hierarchy
+2018-09-05 11:05:52.322 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15003363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:05:54.253 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:05:55.456 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:05:55.784 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:05:55.839 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:05:56.191 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:05:56.196 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:05:56.376 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:05:57.193 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:06:00.659 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:06:04.513 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:06:05.942 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@31500940: startup date [Wed Sep 05 11:05:45 CST 2018]; root of context hierarchy
+2018-09-05 11:06:06.265 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:06:06.553 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:06:06.608 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:06:06.615 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:06:06.998 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:06:06.998 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:06:09.682 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 26.382 seconds (JVM running for 35.565)
+2018-09-05 11:06:10.504 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:06:10.613 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:06:10.805 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:06:11.389 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:06:11.393 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:08:19.673 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s549ms737µs301ns).
+2018-09-05 11:08:19.730 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@31500940: startup date [Wed Sep 05 11:05:45 CST 2018]; root of context hierarchy
+2018-09-05 11:08:19.747 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:08:19.750 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:08:19.788 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-05 11:08:40.421 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 3484 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:08:40.426 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:08:40.744 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5db99216: startup date [Wed Sep 05 11:08:40 CST 2018]; root of context hierarchy
+2018-09-05 11:08:46.399 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90cdd3b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:08:47.256 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:08:48.122 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:08:48.364 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:08:48.428 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:08:48.733 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:08:48.737 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:08:48.941 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:08:49.640 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:08:52.730 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:08:56.620 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:08:58.043 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5db99216: startup date [Wed Sep 05 11:08:40 CST 2018]; root of context hierarchy
+2018-09-05 11:08:58.228 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:08:58.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:08:58.473 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:08:58.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:08:58.609 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:08:58.609 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:08:59.812 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 22.561 seconds (JVM running for 28.594)
+2018-09-05 11:09:00.437 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:09:00.497 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:09:00.662 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:09:01.159 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:09:01.161 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:09:12.611 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:09:12.643 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:09:12.970 [main] DEBUG org.hibernate.SQL - select productinf0_.product_id as product_1_3_0_, productinf0_.category_type as category2_3_0_, productinf0_.product_description as product_3_3_0_, productinf0_.product_icon as product_4_3_0_, productinf0_.product_name as product_5_3_0_, productinf0_.product_price as product_6_3_0_, productinf0_.product_status as product_7_3_0_, productinf0_.product_stock as product_8_3_0_ from product_info productinf0_ where productinf0_.product_id=?
+2018-09-05 11:09:13.001 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [123456]
+2018-09-05 11:09:14.465 [main] DEBUG org.hibernate.SQL - update order_master set create_time=?, update_time=? where order_id=?
+2018-09-05 11:09:14.525 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [TIMESTAMP] - [null]
+2018-09-05 11:09:14.544 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+2018-09-05 11:09:14.566 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:09:14.622 [main] DEBUG org.hibernate.SQL - update product_info set category_type=?, product_description=?, product_icon=?, product_name=?, product_price=?, product_status=?, product_stock=? where product_id=?
+2018-09-05 11:09:14.686 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2018-09-05 11:09:14.705 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [好吃]
+2018-09-05 11:09:14.725 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [http://xxx.jpg]
+2018-09-05 11:09:14.744 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [木桶饭]
+2018-09-05 11:09:14.790 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [NUMERIC] - [20.00]
+2018-09-05 11:09:14.809 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [0]
+2018-09-05 11:09:14.831 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [INTEGER] - [200]
+2018-09-05 11:09:14.848 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [123456]
+2018-09-05 11:10:11.469 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s226ms909µs400ns).
+2018-09-05 11:10:48.962 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5db99216: startup date [Wed Sep 05 11:08:40 CST 2018]; root of context hierarchy
+2018-09-05 11:10:48.974 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:10:48.976 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:10:49.005 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-05 11:13:43.757 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 3420 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:13:43.768 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:13:44.060 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3e587920: startup date [Wed Sep 05 11:13:44 CST 2018]; root of context hierarchy
+2018-09-05 11:13:48.865 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c7aac13c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:13:49.709 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:13:50.565 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:13:50.802 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:13:50.868 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:13:51.178 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:13:51.185 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:13:51.397 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:13:52.094 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:13:54.793 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:13:58.030 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:13:59.303 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3e587920: startup date [Wed Sep 05 11:13:44 CST 2018]; root of context hierarchy
+2018-09-05 11:13:59.554 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:13:59.801 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:13:59.817 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:13:59.820 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:13:59.976 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:13:59.977 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:14:01.174 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 20.807 seconds (JVM running for 26.192)
+2018-09-05 11:14:01.788 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:14:01.848 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:14:02.040 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:14:02.490 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:14:02.493 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:14:11.232 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:14:11.264 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:14:11.569 [main] DEBUG org.hibernate.SQL - select productinf0_.product_id as product_1_3_0_, productinf0_.category_type as category2_3_0_, productinf0_.product_description as product_3_3_0_, productinf0_.product_icon as product_4_3_0_, productinf0_.product_name as product_5_3_0_, productinf0_.product_price as product_6_3_0_, productinf0_.product_status as product_7_3_0_, productinf0_.product_stock as product_8_3_0_ from product_info productinf0_ where productinf0_.product_id=?
+2018-09-05 11:14:11.600 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [123456]
+2018-09-05 11:14:12.940 [main] DEBUG org.hibernate.SQL - update order_master set create_time=?, order_status=?, update_time=? where order_id=?
+2018-09-05 11:14:12.994 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [TIMESTAMP] - [null]
+2018-09-05 11:14:13.043 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [2]
+2018-09-05 11:14:13.060 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [TIMESTAMP] - [null]
+2018-09-05 11:14:13.079 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:14:13.133 [main] DEBUG org.hibernate.SQL - update product_info set category_type=?, product_description=?, product_icon=?, product_name=?, product_price=?, product_status=?, product_stock=? where product_id=?
+2018-09-05 11:14:13.166 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2018-09-05 11:14:13.186 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [好吃]
+2018-09-05 11:14:13.206 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [http://xxx.jpg]
+2018-09-05 11:14:13.223 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [木桶饭]
+2018-09-05 11:14:13.271 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [NUMERIC] - [20.00]
+2018-09-05 11:14:13.292 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [0]
+2018-09-05 11:14:13.313 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [INTEGER] - [200]
+2018-09-05 11:14:13.332 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [123456]
+2018-09-05 11:18:14.440 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m23s771ms305µs498ns).
+2018-09-05 11:18:14.480 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@3e587920: startup date [Wed Sep 05 11:13:44 CST 2018]; root of context hierarchy
+2018-09-05 11:18:14.499 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:18:14.502 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:18:14.529 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-05 11:21:17.470 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 1876 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:21:17.473 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:21:17.596 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@21ec5d87: startup date [Wed Sep 05 11:21:17 CST 2018]; root of context hierarchy
+2018-09-05 11:21:22.722 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f04abfdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:21:23.536 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:21:24.399 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:21:24.629 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:21:24.692 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:21:24.993 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:21:25.000 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:21:25.170 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:21:25.838 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:21:28.908 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:21:32.082 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:21:33.510 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@21ec5d87: startup date [Wed Sep 05 11:21:17 CST 2018]; root of context hierarchy
+2018-09-05 11:21:33.708 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:21:33.909 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:21:33.928 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:21:33.931 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:21:34.070 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:21:34.071 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:21:35.346 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 20.469 seconds (JVM running for 26.162)
+2018-09-05 11:21:35.899 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:21:35.946 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:21:36.108 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:21:36.653 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:21:36.658 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:22:58.180 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s609ms300µs361ns).
+2018-09-05 11:23:10.781 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:23:10.782 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:23:10.810 [main] DEBUG org.hibernate.SQL - select productinf0_.product_id as product_1_3_0_, productinf0_.category_type as category2_3_0_, productinf0_.product_description as product_3_3_0_, productinf0_.product_icon as product_4_3_0_, productinf0_.product_name as product_5_3_0_, productinf0_.product_price as product_6_3_0_, productinf0_.product_status as product_7_3_0_, productinf0_.product_stock as product_8_3_0_ from product_info productinf0_ where productinf0_.product_id=?
+2018-09-05 11:23:10.819 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [123456]
+2018-09-05 11:23:10.899 [main] DEBUG org.hibernate.SQL - update order_master set create_time=?, order_status=?, update_time=? where order_id=?
+2018-09-05 11:23:10.901 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [TIMESTAMP] - [null]
+2018-09-05 11:23:10.905 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [2]
+2018-09-05 11:23:10.906 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [TIMESTAMP] - [null]
+2018-09-05 11:23:10.906 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:23:10.912 [main] DEBUG org.hibernate.SQL - update product_info set category_type=?, product_description=?, product_icon=?, product_name=?, product_price=?, product_status=?, product_stock=? where product_id=?
+2018-09-05 11:23:10.916 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2018-09-05 11:23:10.917 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [好吃]
+2018-09-05 11:23:10.917 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [http://xxx.jpg]
+2018-09-05 11:23:10.917 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [木桶饭]
+2018-09-05 11:23:10.922 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [NUMERIC] - [20.00]
+2018-09-05 11:23:10.923 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [0]
+2018-09-05 11:23:10.924 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [INTEGER] - [200]
+2018-09-05 11:23:10.925 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [123456]
+2018-09-05 11:23:11.009 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@21ec5d87: startup date [Wed Sep 05 11:21:17 CST 2018]; root of context hierarchy
+2018-09-05 11:23:11.034 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:23:11.039 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:23:11.092 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-09-05 11:23:50.565 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Starting OrderMasterServiceImplTest on thin with PID 5484 (started by Think in D:\IDEAproject\springboot\springboot-demo03)
+2018-09-05 11:23:50.571 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - No active profile set, falling back to default profiles: default
+2018-09-05 11:23:50.817 [main] INFO  o.s.w.context.support.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@750fe12e: startup date [Wed Sep 05 11:23:50 CST 2018]; root of context hierarchy
+2018-09-05 11:23:55.565 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15003363] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-05 11:23:56.394 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-09-05 11:23:57.246 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-09-05 11:23:57.446 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:23:57.527 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-05 11:23:57.810 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-05 11:23:57.815 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-09-05 11:23:57.979 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-05 11:23:58.659 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-05 11:24:01.426 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:24:04.943 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:24:06.421 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@750fe12e: startup date [Wed Sep 05 11:23:50 CST 2018]; root of context hierarchy
+2018-09-05 11:24:06.610 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-09-05 11:24:06.837 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/buyer/product/list]}" onto public com.it.springboot.vo.Result<java.util.List> com.it.springboot.web.controller.BuyerProductController.productList()
+2018-09-05 11:24:06.850 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-05 11:24:06.853 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-05 11:24:06.986 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:24:06.987 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-05 11:24:08.161 [main] INFO  c.i.s.service.impl.OrderMasterServiceImplTest - Started OrderMasterServiceImplTest in 19.668 seconds (JVM running for 25.725)
+2018-09-05 11:24:08.898 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:24:08.951 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:24:09.132 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-05 11:24:09.615 [main] DEBUG org.hibernate.SQL - select orderdetai0_.detail_id as detail_i1_0_, orderdetai0_.create_time as create_t2_0_, orderdetai0_.order_id as order_id3_0_, orderdetai0_.product_icon as product_4_0_, orderdetai0_.product_id as product_5_0_, orderdetai0_.product_name as product_6_0_, orderdetai0_.product_price as product_7_0_, orderdetai0_.product_quantity as product_8_0_, orderdetai0_.update_time as update_t9_0_ from order_detail orderdetai0_ where orderdetai0_.order_id=?
+2018-09-05 11:24:09.618 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:24:12.701 [main] DEBUG org.hibernate.SQL - select ordermaste0_.order_id as order_id1_1_0_, ordermaste0_.buyer_address as buyer_ad2_1_0_, ordermaste0_.buyer_name as buyer_na3_1_0_, ordermaste0_.buyer_openid as buyer_op4_1_0_, ordermaste0_.buyer_phone as buyer_ph5_1_0_, ordermaste0_.create_time as create_t6_1_0_, ordermaste0_.order_amount as order_am7_1_0_, ordermaste0_.order_status as order_st8_1_0_, ordermaste0_.pay_status as pay_stat9_1_0_, ordermaste0_.update_time as update_10_1_0_ from order_master ordermaste0_ where ordermaste0_.order_id=?
+2018-09-05 11:24:12.703 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:24:12.717 [main] DEBUG org.hibernate.SQL - select productinf0_.product_id as product_1_3_0_, productinf0_.category_type as category2_3_0_, productinf0_.product_description as product_3_3_0_, productinf0_.product_icon as product_4_3_0_, productinf0_.product_name as product_5_3_0_, productinf0_.product_price as product_6_3_0_, productinf0_.product_status as product_7_3_0_, productinf0_.product_stock as product_8_3_0_ from product_info productinf0_ where productinf0_.product_id=?
+2018-09-05 11:24:12.718 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [123456]
+2018-09-05 11:24:12.787 [main] DEBUG org.hibernate.SQL - update order_master set create_time=?, order_status=?, update_time=? where order_id=?
+2018-09-05 11:24:12.791 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [TIMESTAMP] - [null]
+2018-09-05 11:24:12.794 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [2]
+2018-09-05 11:24:12.794 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [TIMESTAMP] - [null]
+2018-09-05 11:24:12.795 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [1536067805176111708]
+2018-09-05 11:24:12.802 [main] DEBUG org.hibernate.SQL - update product_info set category_type=?, product_description=?, product_icon=?, product_name=?, product_price=?, product_status=?, product_stock=? where product_id=?
+2018-09-05 11:24:12.804 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+2018-09-05 11:24:12.806 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [好吃]
+2018-09-05 11:24:12.813 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [http://xxx.jpg]
+2018-09-05 11:24:12.814 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [木桶饭]
+2018-09-05 11:24:12.819 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [5] as [NUMERIC] - [20.00]
+2018-09-05 11:24:12.820 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [0]
+2018-09-05 11:24:12.835 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [7] as [INTEGER] - [200]
+2018-09-05 11:24:12.837 [main] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [123456]
+2018-09-05 11:24:51.120 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s773ms636µs262ns).
+2018-09-05 11:24:51.136 [Thread-2] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@750fe12e: startup date [Wed Sep 05 11:23:50 CST 2018]; root of context hierarchy
+2018-09-05 11:24:51.148 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-05 11:24:51.154 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-09-05 11:24:51.185 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
