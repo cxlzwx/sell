@@ -2,6 +2,7 @@ package com.it.springboot.service.impl;
 
 import com.it.springboot.dto.OrderMasterDTO;
 import com.it.springboot.enums.OrderStatusEnum;
+import com.it.springboot.enums.PayStatusEnum;
 import com.it.springboot.pojo.OrderDetail;
 import com.it.springboot.service.OrderMasterService;
 import lombok.extern.slf4j.Slf4j;
@@ -53,7 +54,7 @@ public class OrderMasterServiceImplTest {
     @Test
     public void findList() throws Exception {
         PageRequest request = new PageRequest(0, 2);
-        Page<OrderMasterDTO> list = orderMasterService.findList("111", request);
+        Page<OrderMasterDTO> list = orderMasterService.findList("ew3euwhd7sjw9diwkq", request);
         Assert.assertNotNull(list);
     }
 
@@ -73,10 +74,16 @@ public class OrderMasterServiceImplTest {
 
     @Test
     public void finish() throws Exception {
+        OrderMasterDTO masterDTO = orderMasterService.findOne("1536067805176111708");
+        OrderMasterDTO dto = orderMasterService.finish(masterDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISHED.getCode(),dto.getOrderStatus());
     }
 
     @Test
     public void paid() throws Exception {
+        OrderMasterDTO masterDTO = orderMasterService.findOne("1536067805176111708");
+        OrderMasterDTO dto = orderMasterService.paid(masterDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCECC.getCode(),dto.getPayStatus());
     }
 
 }

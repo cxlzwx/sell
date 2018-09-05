@@ -2,11 +2,15 @@ package com.it.springboot.dto;/**
  * Created by sunrise on 2018/9/4.
  */
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.it.springboot.enums.OrderStatusEnum;
 import com.it.springboot.pojo.OrderDetail;
+import com.it.springboot.utils.Date2LongSerializerble;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,6 +21,7 @@ import java.util.List;
  * @Version 1.0
  */
 @Data
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderMasterDTO {
 
     /*买家ID*/
@@ -42,6 +47,12 @@ public class OrderMasterDTO {
 
     /*支付状态*/
     private Integer payStatus;
+
+    @JsonSerialize(using = Date2LongSerializerble.class)
+    private Date createTime;
+
+    @JsonSerialize(using = Date2LongSerializerble.class)
+    private Date updateTime;
 
     List<OrderDetail>  orderDetails;
 }

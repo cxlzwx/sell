@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 /**
  * @ClassName OrderMaster2OrderMasterDTOConverter
- * @Description 转换实体类
+ * @Description OrderMaster转换OrderMasterDTOC实体类
  * @Author sunrise
  * @Date 2018/9/4 22:30
  * @Version 1.0
